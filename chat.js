@@ -71,13 +71,13 @@
       wrap.className = "flex items-start gap-2";
       wrap.innerHTML =
         '<div class="h-7 w-7 rounded-full bg-gradient-to-tr from-brand to-indigo-500 grid place-items-center text-white text-[10px] font-bold">AI</div>' +
-        '<div class="max-w-[75%] rounded-2xl px-3 py-2 bg-white/70 dark:bg-neutral-800/70 border border-white/40 dark:border-neutral-700 text-sm">' +
+        '<div class="max-w-[75%] rounded-2xl px-3 py-2 bg-white/70 dark:bg-neutral-800/70 border border-white/40 dark:border-neutral-700 text-sm break-words wordbreak whitespace-pre-wrap">' +
         escapeHtml(text) +
         "</div>";
     } else {
       wrap.className = "flex items-start gap-2 justify-end";
       wrap.innerHTML =
-        '<div class="max-w-[75%] rounded-2xl px-3 py-2 bg-brand text-white text-sm">' +
+        '<div class="max-w-[75%] rounded-2xl px-3 py-2 bg-brand text-white text-sm break-words wordbreak whitespace-pre-wrap">' +
         escapeHtml(text) +
         "</div>";
     }

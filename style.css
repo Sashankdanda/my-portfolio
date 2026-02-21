@@ -21,3 +21,34 @@
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 .chat-animate-in { animation: chatIn 240ms ease forwards; }
+
+/* Ensure long words/URLs don't overflow chat bubbles */
+.wordbreak {
+  word-break: break-word;
+}
+
+/* 3D Flip Card */
+.flip {
+  perspective: 1000px;
+}
+.flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 500ms ease;
+}
+.flip:hover .flip-inner,
+.flip[data-flipped="true"] .flip-inner {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.perspective-1000 { perspective: 1000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
